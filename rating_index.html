@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Получить подробный отчет</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <div class="report-wrapper">
+        <div class="report-sidebar">
+            <a href="index.html" class="report-close" aria-label="Закрыть">
+                <img src="img/icon_close.svg" alt="x" class="icon_close">
+            </a>
+        </div>
+        <div class="report-content">
+            <h1 class="report-title">Получить подробный отчет</h1>
+            <form class="report-form" action="#" onsubmit="return false;">
+                <input class="report-input" type="text" id="r-name" name="name" placeholder="Ваше имя">
+                <input class="report-input" type="tel" id="r-phone" name="phone" placeholder="Ваш телефон">
+                <input class="report-input" type="email" id="r-email" name="email" placeholder="Email">
+                <input class="report-input" type="text" id="r-position" name="position" placeholder="Должность">
+                <textarea
+                    class="report-input report-textarea"
+                    id="r-confirm"
+                    name="confirm"
+                    placeholder="Как сможете подтвердить причастность к компании?"></textarea>
+                <label class="report-checkbox" for="r-agree">
+                    <input type="checkbox" class="report-checkbox__input" id="r-agree" name="agree">
+                    <span class="report-checkbox__box"></span>
+                    <span class="report-checkbox__text">
+                        Я даю свое согласие на
+                        <a href="#" class="report-checkbox__link">обработку моих персональных данных</a>
+                    </span>
+                </label>
+                <button class="report-submit" type="submit">Отправить</button>
+
+            </form>
+        </div>
+    </div>
+    <header class="report-mobile-header">
+        <a href="index.html" class="report-mobile-close">
+            <img src="img/icon_close.svg">
+        </a>
+        <a href="index.html" class="report-mobile-logo">
+            <img src="img/logo_mobile.svg" alt="Логотип">
+        </a>
+        <a href="#" class="report-mobile-cta">Оставить заявку</a>
+    </header>
+</body>
+</html>
