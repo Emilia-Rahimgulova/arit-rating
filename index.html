@@ -610,47 +610,48 @@
         </div>
 
         <aside class="rating-sidebar">
-          <div class="sidebar-meta">
-            <div class="sidebar-meta__item">
-              <span class="sidebar-meta__label">Дата:</span>
-              <span class="sidebar-meta__value">14 декабря 2025</span>
+          <div class="rating-sidebar__inner">
+            <div class="sidebar-meta">
+              <div class="sidebar-meta__item">
+                <span class="sidebar-meta__label">Дата:</span>
+                <span class="sidebar-meta__value">14 декабря 2025</span>
+              </div>
+              <div class="sidebar-meta__item">
+                <span class="sidebar-meta__label">Организатор:</span>
+                <span class="sidebar-meta__value sidebar-meta__value--org">Вебпространство</span>
+              </div>
             </div>
-            <div class="sidebar-meta__item">
-              <span class="sidebar-meta__label">Организатор:</span>
-              <span class="sidebar-meta__value sidebar-meta__value--org">Вебпространство</span>
-            </div>
-          </div>
-          <a href="#rules-anchor" class="sidebar-rule hoverable">
-            <span class="sidebar-rule__title">Правило</span>
-            <span class="sidebar-rule__link hoverable">
+            <a href="#rules-anchor" class="sidebar-rule hoverable">
+              <span class="sidebar-rule__title">Правило</span>
+              <span class="sidebar-rule__link hoverable">
 							<img src="img/arrow-down.svg" alt="" class="icon-arrow">
 						</span>
-          </a>
-          <div class="sidebar-form-wrap">
-            <h2 class="sidebar-form__title">Добавить сайт</h2>
-            <form class="sidebar-form" data-sidebar-form="" action="#" method="POST" novalidate="">
-              <div class="form-group" data-form-group="">
-                <input class="form-input hoverable" type="text" id="name" name="name" placeholder="Ваше имя" required=""
-                       data-type="name">
-              </div>
-              <div class="form-group" data-form-group="">
-                <input class="form-input hoverable" type="tel" id="phone" name="phone" placeholder="Ваш телефон"
-                       required="" data-type="phone">
-              </div>
-              <div class="form-group" data-form-group="">
-                <input class="form-input hoverable" type="email" id="email" name="email" placeholder="Email" required=""
-                       data-type="email">
-              </div>
-              <div class="form-group" data-form-group="">
-                <input class="form-input hoverable" type="text" id="position" name="position" placeholder="Должность"
-                       required="">
-              </div>
-              <div class="form-group" data-form-group="">
-                <input class="form-input hoverable" type="url" data-type="url"
-                       data-error-message="Введите корректный сайт" id="site" name="site" placeholder="Сайт"
-                       required="">
-              </div>
-              <label class="form-checkbox hoverable" for="agree" data-form-group-checkbox="">
+            </a>
+            <div class="sidebar-form-wrap">
+              <h2 class="sidebar-form__title">Добавить сайт</h2>
+              <form class="sidebar-form" data-sidebar-form="" action="#" method="POST" novalidate="">
+                <div class="form-group" data-form-group="">
+                  <input class="form-input hoverable" type="text" id="name" name="name" placeholder="Ваше имя" required=""
+                         data-type="name">
+                </div>
+                <div class="form-group" data-form-group="">
+                  <input class="form-input hoverable" type="tel" id="phone" name="phone" placeholder="Ваш телефон"
+                         required="" data-type="phone">
+                </div>
+                <div class="form-group" data-form-group="">
+                  <input class="form-input hoverable" type="email" id="email" name="email" placeholder="Email" required=""
+                         data-type="email">
+                </div>
+                <div class="form-group" data-form-group="">
+                  <input class="form-input hoverable" type="text" id="position" name="position" placeholder="Должность"
+                         required="">
+                </div>
+                <div class="form-group" data-form-group="">
+                  <input class="form-input hoverable" type="url" data-type="url"
+                         data-error-message="Введите корректный сайт" id="site" name="site" placeholder="Сайт"
+                         required="">
+                </div>
+                <label class="form-checkbox hoverable" for="agree" data-form-group-checkbox="">
 								<span class="form-checkbox__inner">
 									<input data-required-message="Подтвердите согласие" data-error-message="Подтвердите согласие"
                          type="checkbox" required="" class="form-checkbox__input" id="agree" name="agree">
@@ -660,34 +661,35 @@
 											<a href="#" class="form-checkbox__link hoverable" target="_blank">персональных данных</a>
 										</span>
 								</span>
-              </label>
-              <button class="btn-submit hoverable" type="submit">Оставить заявку</button>
-            </form>
-          </div>
-          <div class="btn-contact">
-            <button class="btn-contact__main" data-call-request-btn>Напишите нам,</button>
-            <span class="btn-contact__sub">если у вас есть вопросы</span>
+                </label>
+                <button class="btn-submit hoverable" type="submit">Оставить заявку</button>
+              </form>
+            </div>
+            <div class="btn-contact">
+              <button class="btn-contact__main" data-call-request-btn>Напишите нам,</button>
+              <span class="btn-contact__sub">если у вас есть вопросы</span>
+            </div>
           </div>
         </aside>
       </div>
       <section class="other-ratings">
         <h2 class="other-ratings__title">Другие рейтинги</h2>
         <div class="other-ratings__list">
-          <div class="other-ratings__row">
+          <a href="#" class="other-ratings__row">
             <span class="other-ratings__date">14 декабря 2023</span>
             <span class="other-ratings__name">Промышленная отрасль</span>
-            <a href="#" class="other-ratings__link hoverable"><img src="img/up-arrow.svg" alt="" class="icon-arrow"></a>
-          </div>
-          <div class="other-ratings__row">
+            <span class="other-ratings__link hoverable"><img src="img/up-arrow.svg" alt="" class="icon-arrow"></span>
+          </a>
+          <a href="#" class="other-ratings__row">
             <span class="other-ratings__date">14 декабря 2023</span>
             <span class="other-ratings__name">Медицинская отрасль</span>
-            <a href="#" class="other-ratings__link hoverable"><img src="img/up-arrow.svg" alt="" class="icon-arrow"></a>
-          </div>
-          <div class="other-ratings__row">
+            <span class="other-ratings__link hoverable"><img src="img/up-arrow.svg" alt="" class="icon-arrow"></span>
+          </a>
+          <a href="#" class="other-ratings__row">
             <span class="other-ratings__date">14 декабря 2023</span>
             <span class="other-ratings__name">Образовательная отрасль</span>
-            <a href="#" class="other-ratings__link hoverable"><img src="img/up-arrow.svg" alt="" class="icon-arrow"></a>
-          </div>
+            <span class="other-ratings__link hoverable"><img src="img/up-arrow.svg" alt="" class="icon-arrow"></span>
+          </a>
         </div>
       </section>
       <section id="rules-anchor" class="rule-section">
