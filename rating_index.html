@@ -1,51 +1,134 @@
-<!DOCTYPE html>
-<html lang="ru">
+<html lang="ru" class="bx-core bx-no-touch bx-no-retina bx-chrome">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Получить подробный отчет</title>
-    <link rel="stylesheet" href="style2.css">
+  <meta http-equiv="origin-trial"
+        content="A7vZI3v+Gz7JfuRolKNM4Aff6zaGuT7X0mf3wtoZTnKv6497cVMnhy03KDqX7kBz/q/iidW7srW31oQbBt4VhgoAAACUeyJvcmlnaW4iOiJodHRwczovL3d3dy5nb29nbGUuY29tOjQ0MyIsImZlYXR1cmUiOiJEaXNhYmxlVGhpcmRQYXJ0eVN0b3JhZ2VQYXJ0aXRpb25pbmczIiwiZXhwaXJ5IjoxNzU3OTgwODAwLCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlfQ==">
+  <meta charset="UTF-8">
+  <title>Рейтинг промышленной отрасли | АРИТ РБ</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <link href="https://aritrb.wptt.ru//bitrix/cache/css/s1/main/kernel_main/kernel_main.css?177382588326563"
+        type="text/css" rel="stylesheet">
+  <link
+    href="https://aritrb.wptt.ru//bitrix/cache/css/s1/main/page_4d5cdc8f9a8968834e42bb6672310e86/page_4d5cdc8f9a8968834e42bb6672310e86.css?17743287171427"
+    type="text/css" rel="stylesheet">
+  <link
+    href="https://aritrb.wptt.ru//bitrix/cache/css/s1/main/template_fc9cb3be5827193922127707733db0bb/template_fc9cb3be5827193922127707733db0bb.css?177382585471237"
+    type="text/css" data-template-style="true" rel="stylesheet">
+
+  <meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="icon" href="https://aritrb.wptt.ru/local/templates/main/files/icons/favicon16x16.ico" type="image/x-icon">
+  <meta name="robots" content="all">
+  <meta property="og:title" content="АРИТ РБ">
+  <meta property="og:description" content="Ассоциация развития информационных технологий Республики Башкортостан">
+  <meta name="cmsmagazine" content="189f7bf1ce74ebf1535cc7e1d6cd03eb">
+  <link rel="stylesheet" href="style.css" type="text/css">
+  <script type="text/javascript" async="" charset="utf-8"
+          src="https://www.gstatic.com/recaptcha/releases/79clEdOi5xQbrrpL2L8kGmK3/recaptcha__ru.js"
+          crossorigin="anonymous"
+          integrity="sha384-KLDYZ4b3uze+khvIdAwbHNRLWLcVREKgCoqSSGhf+WinThifuWZe6zR6GDM/y6LJ"></script>
+  <script src="script/sidebarForm.js"></script>
+  <script src="script/callRequestButton.js"></script>
+  <script src="script/tooltipHover.js"></script>
+  <!--  <script type="module" src="/script/index.js"></script>-->
 </head>
 <body>
-    <div class="report-wrapper">
-        <div class="report-sidebar">
-            <a href="index.html" class="report-close" aria-label="Закрыть">
-                <img src="img/icon_close.svg" alt="x" class="icon_close">
-            </a>
-        </div>
-        <div class="report-content">
-            <h1 class="report-title">Получить подробный отчет</h1>
-            <form class="report-form" action="#" onsubmit="return false;">
-                <input class="report-input" type="text" id="r-name" name="name" placeholder="Ваше имя">
-                <input class="report-input" type="tel" id="r-phone" name="phone" placeholder="Ваш телефон">
-                <input class="report-input" type="email" id="r-email" name="email" placeholder="Email">
-                <input class="report-input" type="text" id="r-position" name="position" placeholder="Должность">
-                <textarea
-                    class="report-input report-textarea"
-                    id="r-confirm"
-                    name="confirm"
-                    placeholder="Как сможете подтвердить причастность к компании?"></textarea>
-                <label class="report-checkbox" for="r-agree">
-                    <input type="checkbox" class="report-checkbox__input" id="r-agree" name="agree">
-                    <span class="report-checkbox__box"></span>
-                    <span class="report-checkbox__text">
-                        Я даю свое согласие на
-                        <a href="#" class="report-checkbox__link">обработку моих персональных данных</a>
-                    </span>
-                </label>
-                <button class="report-submit" type="submit">Отправить</button>
+<div class="report-wrapper">
+  <div class="report-sidebar">
+    <a href="index.html" class="report-close" aria-label="Закрыть">
+      <img src="img/icon_close.svg" alt="x" class="icon_close">
+    </a>
+  </div>
+  <div class="report-content">
+    <h1 class="report-title">Получить подробный отчет</h1>
+    <form class="report-form" novalidate>
+      <div class="form-group" data-form-group>
+        <input class="report-input hoverable" placeholder="Ваше имя*" required="" name="form_text_237" data-type="name"
+               type="text">
+      </div>
+      <div class="form-group" data-form-group>
+        <input class="report-input hoverable" placeholder="Ваш телефон*" required="" data-type="phone" type="tel">
+      </div>
+      <div class="form-group" data-form-group="">
+        <input class="report-input hoverable" type="email" id="email" placeholder="Email" required="" data-type="email">
+      </div>
 
-            </form>
-        </div>
-    </div>
-    <header class="report-mobile-header">
-        <a href="index.html" class="report-mobile-close">
-            <img src="img/icon_close.svg">
-        </a>
-        <a href="index.html" class="report-mobile-logo">
-            <img src="img/logo_mobile.svg" alt="Логотип">
-        </a>
-        <a href="#" class="report-mobile-cta">Оставить заявку</a>
-    </header>
+      <div class="form-group" data-form-group="">
+        <input class="report-input hoverable" type="text" id="position"  placeholder="Должность">
+      </div>
+      <div class="form-group" data-form-group="">
+        <textarea class="report-input report-textarea" id="r-confirm"
+               placeholder="Как сможете подтвердить причастность к компании?"></textarea>
+      </div>
+
+      <label class="form-checkbox" for="r-agree" data-form-group-checkbox>
+        <span class="form-checkbox__inner">
+          <input required data-required-message="Подтвердите согласие" data-error-message="Подтвердите согласие"
+                  class="report-checkbox__input" type="checkbox" id="r-agree" name="agree">
+          <span class="report-checkbox__box"></span>
+          <span class="report-checkbox__text">
+            Я даю свое согласие на
+            <a href="#" target="_blank" class="report-checkbox__link">обработку моих персональных данных</a>
+          </span>
+        </span>
+      </label>
+      <button class="report-submit" type="submit">Отправить</button>
+
+    </form>
+  </div>
+</div>
+<header class="report-mobile-header">
+  <a href="index.html" class="report-mobile-close">
+    <img src="img/icon_close.svg">
+  </a>
+  <a href="index.html" class="report-mobile-logo">
+    <img src="img/logo_mobile.svg" alt="Логотип">
+  </a>
+  <a href="#" class="report-mobile-cta">Оставить заявку</a>
+</header>
+
+<script type="text/javascript">if (!window.BX) window.BX = {};
+if (!window.BX.message) window.BX.message = function (mess) {
+  if (typeof mess == 'object') for (var i in mess) BX.message[i] = mess[i];
+  return true;
+};</script>
+<script type="text/javascript">(window.BX || top.BX).message({
+  'JS_CORE_LOADING': 'Загрузка...',
+  'JS_CORE_NO_DATA': '- Нет данных -',
+  'JS_CORE_WINDOW_CLOSE': 'Закрыть',
+  'JS_CORE_WINDOW_EXPAND': 'Развернуть',
+  'JS_CORE_WINDOW_NARROW': 'Свернуть в окно',
+  'JS_CORE_WINDOW_SAVE': 'Сохранить',
+  'JS_CORE_WINDOW_CANCEL': 'Отменить',
+  'JS_CORE_WINDOW_CONTINUE': 'Продолжить',
+  'JS_CORE_H': 'ч',
+  'JS_CORE_M': 'м',
+  'JS_CORE_S': 'с',
+  'JSADM_AI_HIDE_EXTRA': 'Скрыть лишние',
+  'JSADM_AI_ALL_NOTIF': 'Показать все',
+  'JSADM_AUTH_REQ': 'Требуется авторизация!',
+  'JS_CORE_WINDOW_AUTH': 'Войти',
+  'JS_CORE_IMAGE_FULL': 'Полный размер'
+});</script>
+<script type="text/javascript">(window.BX || top.BX).message({
+  'LANGUAGE_ID': 'ru',
+  'FORMAT_DATE': 'DD.MM.YYYY',
+  'FORMAT_DATETIME': 'DD.MM.YYYY HH:MI:SS',
+  'COOKIE_PREFIX': 'BITRIX_SM',
+  'SERVER_TZ_OFFSET': '10800',
+  'SITE_ID': 's1',
+  'SITE_DIR': '/',
+  'USER_ID': '',
+  'SERVER_TIME': '1774513740',
+  'USER_TZ_OFFSET': '0',
+  'USER_TZ_AUTO': 'Y',
+  'bitrix_sessid': '457384d256e69d780fb5201805bac9c4'
+});</script>
+<script type="text/javascript"
+        src="https://aritrb.wptt.ru/bitrix/cache/js/s1/main/kernel_main/kernel_main.js?1774328715299266"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+<script type="text/javascript"
+        src="https://www.google.com/recaptcha/api.js?render=6Lez6h4pAAAAAPikebL6yd_SkWBMnYd-9XJuuQBt"></script>
+<script type="text/javascript"
+        src="https://aritrb.wptt.ru/bitrix/cache/js/s1/main/template_5422b09689330f878088e21835c87969/template_5422b09689330f878088e21835c87969.js?1773825854164259"></script>
 </body>
 </html>

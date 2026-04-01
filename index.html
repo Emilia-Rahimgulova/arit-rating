@@ -1,534 +1,879 @@
-<!DOCTYPE html>
 <html lang="ru" class="bx-core bx-no-touch bx-no-retina bx-chrome">
 <head>
-    <script src="https://mc.yandex.ru/metrika/tag_phono.js" type="text/javascript" charset="utf-8" async=""></script>
-    <meta http-equiv="origin-trial" content="A7vZI3v+Gz7JfuRolKNM4Aff6zaGuT7X0mf3wtoZTnKv6497cVMnhy03KDqX7kBz/q/iidW7srW31oQbBt4VhgoAAACUeyJvcmlnaW4iOiJodHRwczovL3d3dy5nb29nbGUuY29tOjQ0MyIsImZlYXR1cmUiOiJEaXNhYmxlVGhpcmRQYXJ0eVN0b3JhZ2VQYXJ0aXRpb25pbmczIiwiZXhwaXJ5IjoxNzU3OTgwODAwLCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlfQ==">
-    <title>Рейтинг промышленной отрасли | АРИТ РБ</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <script async="" src="https://mc.yandex.ru/metrika/tag.js"></script>
-    <script type="text/javascript" async="" charset="utf-8" src="https://www.gstatic.com/recaptcha/releases/qm3PSRIx10pekcnS9DjGnjPW/recaptcha__ru.js" crossorigin="anonymous" integrity="sha384-MbNyHUOud483XgZLRJomjKevdhbit3WH7qeh5gvCTaEZhrULtAFqGlwR+ys/TEUM"></script>
-    <script type="text/javascript" data-skip-moving="true">
-        (function(w, d, n) {var cl = "bx-core";var ht = d.documentElement;var htc = ht ? ht.className : undefined;if (htc === undefined || htc.indexOf(cl) !== -1){return;}var ua = n.userAgent;if (/(iPad;)|(iPhone;)/i.test(ua)){cl += " bx-ios";}else if (/Android/i.test(ua)){cl += " bx-android";}cl += (/(ipad|iphone|android|mobile|touch)/i.test(ua) ? " bx-touch" : " bx-no-touch");cl += w.devicePixelRatio && w.devicePixelRatio >= 2? " bx-retina": " bx-no-retina";var ieVersion = -1;if (/AppleWebKit/.test(ua)){cl += " bx-chrome";}else if ((ieVersion = getIeVersion()) > 0){cl += " bx-ie bx-ie" + ieVersion;if (ieVersion > 7 && ieVersion < 10 && !isDoctype()){cl += " bx-quirks";}}else if (/Opera/.test(ua)){cl += " bx-opera";}else if (/Gecko/.test(ua)){cl += " bx-firefox";}if (/Macintosh/i.test(ua)){cl += " bx-mac";}ht.className = htc ? htc + " " + cl : cl;function isDoctype(){if (d.compatMode){return d.compatMode == "CSS1Compat";}return d.documentElement && d.documentElement.clientHeight;}function getIeVersion(){if (/Opera/i.test(ua) || /Webkit/i.test(ua) || /Firefox/i.test(ua) || /Chrome/i.test(ua)){return -1;}var rv = -1;if (!!(w.MSStream) && !(w.ActiveXObject) && ("ActiveXObject" in w)){rv = 11;}else if (!!d.documentMode && d.documentMode >= 10){rv = 10;}else if (!!d.documentMode && d.documentMode >= 9){rv = 9;}else if (d.attachEvent && !/Opera/.test(ua)){rv = 8;}if (rv == -1 || rv == 8){var re;if (n.appName == "Microsoft Internet Explorer"){re = new RegExp("MSIE ([0-9]+[\.0-9]*)");if (re.exec(ua) != null){rv = parseFloat(RegExp.$1);}}else if (n.appName == "Netscape"){rv = 11;re = new RegExp("Trident/.*rv:([0-9]+[\.0-9]*)");if (re.exec(ua) != null){rv = parseFloat(RegExp.$1);}}}return rv;}})(window, document, navigator);
-    </script>
-    <link href="https://aritrb.wptt.ru//bitrix/cache/css/s1/main/kernel_main/kernel_main.css?177382588326563" type="text/css" rel="stylesheet">
-    <link href="https://aritrb.wptt.ru//bitrix/cache/css/s1/main/page_4d5cdc8f9a8968834e42bb6672310e86/page_4d5cdc8f9a8968834e42bb6672310e86.css?17743287171427" type="text/css" rel="stylesheet">
-    <link href="https://aritrb.wptt.ru//bitrix/cache/css/s1/main/template_fc9cb3be5827193922127707733db0bb/template_fc9cb3be5827193922127707733db0bb.css?177382585471237" type="text/css" data-template-style="true" rel="stylesheet">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="icon" href="https://aritrb.wptt.ru/local/templates/main/files/icons/favicon16x16.ico" type="image/x-icon">
-    <meta name="robots" content="all">
-    <meta property="og:title" content="АРИТ РБ">
-    <meta property="og:description" content="Ассоциация развития информационных технологий Республики Башкортостан">
-    <meta name="cmsmagazine" content="189f7bf1ce74ebf1535cc7e1d6cd03eb">
+  <meta http-equiv="origin-trial"
+        content="A7vZI3v+Gz7JfuRolKNM4Aff6zaGuT7X0mf3wtoZTnKv6497cVMnhy03KDqX7kBz/q/iidW7srW31oQbBt4VhgoAAACUeyJvcmlnaW4iOiJodHRwczovL3d3dy5nb29nbGUuY29tOjQ0MyIsImZlYXR1cmUiOiJEaXNhYmxlVGhpcmRQYXJ0eVN0b3JhZ2VQYXJ0aXRpb25pbmczIiwiZXhwaXJ5IjoxNzU3OTgwODAwLCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlfQ==">
+  <meta charset="UTF-8">
+  <title>Рейтинг промышленной отрасли | АРИТ РБ</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <link href="https://aritrb.wptt.ru//bitrix/cache/css/s1/main/kernel_main/kernel_main.css?177382588326563"
+        type="text/css" rel="stylesheet">
+  <link
+    href="https://aritrb.wptt.ru//bitrix/cache/css/s1/main/page_4d5cdc8f9a8968834e42bb6672310e86/page_4d5cdc8f9a8968834e42bb6672310e86.css?17743287171427"
+    type="text/css" rel="stylesheet">
+  <link
+    href="https://aritrb.wptt.ru//bitrix/cache/css/s1/main/template_fc9cb3be5827193922127707733db0bb/template_fc9cb3be5827193922127707733db0bb.css?177382585471237"
+    type="text/css" data-template-style="true" rel="stylesheet">
 
-    <!-- Yandex.Metrika counter -->
-    <noscript><div><img src="https://mc.yandex.ru/watch/62732476" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
-    <!-- /Yandex.Metrika counter -->
-    <style>
-        div[id^="wait_comp_"] { display: none!important; }
-        .grecaptcha-badge { display: none!important; }
-    </style>
-
-    <link rel="stylesheet" href="style.css" type="text/css">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="icon" href="https://aritrb.wptt.ru/local/templates/main/files/icons/favicon16x16.ico" type="image/x-icon">
+  <meta name="robots" content="all">
+  <meta property="og:title" content="АРИТ РБ">
+  <meta property="og:description" content="Ассоциация развития информационных технологий Республики Башкортостан">
+  <meta name="cmsmagazine" content="189f7bf1ce74ebf1535cc7e1d6cd03eb">
+  <link rel="stylesheet" href="style.css" type="text/css">
+  <script type="text/javascript" async="" charset="utf-8"
+          src="https://www.gstatic.com/recaptcha/releases/79clEdOi5xQbrrpL2L8kGmK3/recaptcha__ru.js"
+          crossorigin="anonymous"
+          integrity="sha384-KLDYZ4b3uze+khvIdAwbHNRLWLcVREKgCoqSSGhf+WinThifuWZe6zR6GDM/y6LJ"></script>
+  <script src="script/sidebarForm.js"></script>
+  <script src="script/callRequestButton.js"></script>
+  <script src="script/tooltipHover.js"></script>
+  <!--  <script type="module" src="/script/index.js"></script>-->
 </head>
-<body class="webp" cz-shortcut-listen="true">
-    <div class="wrapper">
-        <div id="panel"></div>
-        <div class="follow-cursor" style="transform: translate3d(1819px, 90px, 0px); display: none;"></div>
-        <div class="follow-cursor__block" style="transform: translate3d(1819px, 90px, 0px); display: none;"></div>
-        <header class="header">
-            <div class="left-bar">
-                <button class="btn hoverable burger-btn" id="burger-btn">
-                    <span class="children"> </span>
-                </button>
-                <div class="menu" id="menu">
-                    <div class="menu-links">
-                        <ul>
-                            <li>
-                                <a href="https://aritrb.wptt.ru/catalog/products/" class="link menu-link hoverable">It-решения</a>
-                                <ul class="sub-menu">
-                                    <li><a class="link sub-menu-link hoverable" href="https://aritrb.wptt.ru/catalog/products/1s-bitriks-upravlenie-saytom-standart/">1С-Битрикс: Управление сайтом — Стандарт</a></li>
-                                    <li><a class="link sub-menu-link hoverable" href="https://aritrb.wptt.ru/catalog/products/1s-bitriks-upravlenie-saytom-ekspert/">1С-Битрикс: Управление сайтом — Эксперт</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="https://aritrb.wptt.ru/catalog/services/" class="link menu-link hoverable">Услуги</a></li>
-                            <li><a href="https://aritrb.wptt.ru/realizovannye-proekty/" class="link menu-link hoverable menu-link_active">Проекты</a></li>
-                            <li><a href="https://aritrb.wptt.ru/about-project/" class="link menu-link hoverable">Ассоциация</a></li>
-                            <li><a href="https://aritrb.wptt.ru/association_news/" class="link menu-link hoverable">Новости</a></li>
-                            <li><a href="https://aritrb.wptt.ru/arit-index/" class="link menu-link hoverable">Index</a></li>
-                        </ul>
-                        <a href="https://aritrb.wptt.ru/auth/" class="link menu-link menu-link_mobile">Личный кабинет</a>
-                    </div>
-                    <form action="https://aritrb.wptt.ru/search/" class="top-container">
-                        <div class="search-bar">
-                            <input placeholder="Введите запрос" name="q" required="">
-                            <button class="search-bar__reset" type="reset"></button>
-                            <button class="search-bar__submit" type="submit"></button>
-                        </div>
-                    </form>
-                </div>
-                <div class="search-menu" id="search-menu">
-                    <form action="https://aritrb.wptt.ru/search/" class="top-container hoverable">
-                        <div class="search-bar">
-                            <input placeholder="Введите запрос" name="q" required="">
-                            <button class="search-bar__reset" type="reset"></button>
-                            <button class="search-bar__submit" type="submit"></button>
-                        </div>
-                    </form>
-                </div>
-                <div class="call-request-menu" id="call-request-menu">
-                    <div id="comp_ab6864afb0a11c5fc211d373f114dcd2">
-                        <h2 class="call-request-menu__title">Связаться с нами</h2>
-                        <p></p>
-                        <div class="call-request-menu__form call-request">
-                            <form name="REQUEST" action="https://aritrb.wptt.ru/realizovannye-proekty/avtomatizatsiya-sistemy-kontrolno-propusknogo-rezhima-na-territorii-oez-ppt-alabuga/?CODE=avtomatizatsiya-sistemy-kontrolno-propusknogo-rezhima-na-territorii-oez-ppt-alabuga" method="POST" enctype="multipart/form-data" novalidate="true">
-                                <input type="hidden" name="bxajaxid" id="bxajaxid_ab6864afb0a11c5fc211d373f114dcd2_8BACKi" value="ab6864afb0a11c5fc211d373f114dcd2">
-                                <input type="hidden" name="AJAX_CALL" value="Y">
-                                <input type="hidden" name="sessid" id="sessid" value="457384d256e69d780fb5201805bac9c4">
-                                <input type="hidden" name="WEB_FORM_ID" value="19">
-                                <input type="hidden" name="g-recaptcha-response" id="recaptchaResponse" value="HFNTk5JkAeaj1jZywMGxMdGkxibHlpOj53ZlJfb11NSmNRZSUlXzBpclo-M30aImY8HCh7RAodNzk5CBEUFlA9fDMTCj5LRUZyXh4xPlMbNDgYBGg8OHlxRXQ_AxkKHQwKB34lIC8BLTIoT1gUEB4VNwknd3YAESI1AVY9cRo5JHsoJHs-FQ4MGwQxKjUhGHszOB8Lcx0SCyMFPG0tBhwiNBoULWEafTN9Mn08BxMWGx8GcSA5LR1mITxLCDNDAxElHjRgYxMaKWEHEjciCSw3LjBhJBoNExldVxZ3YmlQMQN4WFgjD0gkCDIUYDFRDyknBxUeOjE2CGE7UR5dRkpdRipge24YF3osPUNYHVxLSGdQdCZDXkN8cFhec0wbJS9jeD8KUUpKEhcbMXduZVA9D3hUVDMmJUQ0JBAiQBhKKC8FG31sFBU2Z2JPdRw7QQEcMT9iHh84LWVvWE9gIV5GaS0yYmkNEy1pVj14LUV5fT95ViAWEBcPB0xibhIPXD1wYFZEbktIOnJSYUNpA0V4ZVs5ZD1FKHU7dCh7RDkIBBQMCzc-HBx7aW8gU2FZWUdhSW8kJCo7FAEkUn9MXG5zbzhmIF1KRD8dBjs9eX5HMwM1GAU_B15GHVFpLi5RUXxiVF5_MyY9KW4jaGxKMk1LQ0djaHlpSyp1FQ">
-                                <div class="form-group input__container input__container_text hoverable">
-                                    <input class="form-control" placeholder="Ваше имя*" required="" name="form_text_237" data-type="text" type="text">
-                                </div>
-                                <div class="form-group input__container input__container_phone hoverable">
-                                    <input name="phone" type="hidden">
-                                    <input name="form_text_238" class="form-control" placeholder="Ваш телефон*" required="" data-type="tel" type="tel">
-                                </div>
-                                <div class="form-group textarea__container hoverable">
-                                    <textarea class="form-control" placeholder="Ваше сообщение*" required="" name="form_textarea_239" data-type="textarea"></textarea>
-                                </div>
-                                <div class="form-group">
-                                    <label class="checkbox checkbox_white">
-                                        <input class="form-control" required="" id="240" name="form_checkbox_POLICY[]" checked="" value="240" data-type="checkbox" type="checkbox">
-                                        <span class="label hoverable">Я даю свое согласие на <a href="https://aritrb.wptt.ru/policy/" target="_blank">обработку моих персональных данных</a></span>
-                                        <span class="custom-checkbox hoverable"></span>
-                                    </label>
-                                </div>
-                                <button name="web_form_submit" class="btn hoverable btn_secondary" type="submit" value="Отправить">
-                                    <span class="children">Отправить</span>
-                                </button>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-                <a class="link close-btn hoverable"></a>
-            </div>
-            <div class="header__nav">
-                <a href="https://aritrb.wptt.ru/" class="logo hoverable">
-                    <img src="https://aritrb.wptt.ru/upload/iblock/005/logo.svg" alt="logo" class="logo_desktop">
-                    <img src="https://aritrb.wptt.ru/upload/iblock/67b/logo_mobile.svg" alt="mobile logo" class="logo_mobile">
-                </a>
-                <nav class="nav">
-                    <a class="link hoverable" href="https://aritrb.wptt.ru/catalog/products/">Pешения</a>
-                    <a class="link hoverable" href="https://aritrb.wptt.ru/catalog/services/">Услуги</a>
-                    <a class="link hoverable selected" href="https://aritrb.wptt.ru/realizovannye-proekty/">Проекты</a>
-                    <a class="link hoverable" href="https://aritrb.wptt.ru/about-project/">Ассоциация</a>
-                    <a class="link hoverable" href="https://aritrb.wptt.ru/association_news/">Новости</a>
-                    <a class="link hoverable" href="https://aritrb.wptt.ru/arit-index/">Index</a>
-                </nav>
-            </div>
-            <div id="search-btn" class="header__link header__link_search hoverable">
-                <a class="link-icon link-icon_search"></a>
-            </div>
-            <div class="header__link header__link_personal hoverable">
-                <a href="https://aritrb.wptt.ru/auth/" class="link-icon link-icon_personal"></a>
-            </div>
-            <div id="call-request-btn" class="header__link header__link_call-request hoverable">
-                <a class="link">Оставить заявку</a>
-            </div>
-        </header>
-
-        <main class="main">
-            <div class="container">
-                <h1 class="page-title">Рейтинг сайтов промышленной отрасли</h1>
-                <div class="rating-layout">
-                    <div class="rating-table-wrap">
-                        <div class="rating-table">
-                            <div class="rating-head">
-                                <span class="col-num">№</span>
-                                <span class="col-name">Название</span>
-                                <span class="col-weight">
-                                    Общий вес
-                                    <button class="tooltip-btn hoverable" aria-label="Подсказка">
-                                        <img src="img/help-circle.svg" alt="" class="icon-help">
-                                    </button>
-                                </span>
-                                <span class="col-checklist">
-                                    Кол-во пунктов по чек-листу
-                                    <button class="tooltip-btn hoverable" aria-label="Подсказка">
-                                        <img src="img/help-circle.svg" alt="" class="icon-help">
-                                    </button>
-                                </span>
-                                <span class="col-company"></span>
-                            </div>
-                            <ul class="rating-list">
-                                <li class="rating-row">
-                                    <a href="../rating/rating/index.html" target="_blank" class="row-content-link hoverable cursor-hover-expand">
-                                    <span class="col-num row-num"><span class="rating-row__label">Номер в рейтинге</span>1</span>
-                                    <div class="col-name">
-                                        <span class="rating-row__label">Название</span>
-                                        <span class="row-company-name">ООО «КВАДРИТ»</span>
-                                        <span class="rating-row__label rating-row__label--url">Ссылка на сайт</span>
-                                        <span class="row-company-url">адрессайта.ру</span>
-                                    </div>
-                                    <span class="col-weight row-value"><span class="rating-row__label">Общий вес <img src="img/help-circle.svg" alt="" class="icon-help"></span>46</span>
-                                    <span class="col-checklist row-value"><span class="rating-row__label">Кол-во пунктов по чек-листу <img src="img/help-circle.svg" alt="" class="icon-help"></span>47 из 92</span>
-                                    <div class="col-company">
-                                        <span class="row-your-company hoverable">Ваша компания?</span>
-                                        <span class="row-report-link hoverable">Получить подробный отчет</span>
-                                    </div>
-                                </a>
-                                </li>
-
-                                <li class="rating-row">
-                                    <a href="https://aritrb.ru/rating/rating/index.html" target="_blank" class="row-content-link hoverable cursor-hover-expand">
-                                    <span class="col-num row-num hoverable"><span class="rating-row__label">Номер в рейтинге</span>2</span>
-                                    <div class="col-name">
-                                        <span class="rating-row__label">Название</span>
-                                        <span class="row-company-name">ООО «НПП УРАЛНЕФТЕГАЗДИАГНОСТИКА»</span>
-                                        <span class="rating-row__label rating-row__label--url">Ссылка на сайт</span>
-                                        <span class="row-company-url">адрессайта.ру</span>
-                                    </div>
-                                    <span class="col-weight row-value"><span class="rating-row__label">Общий вес <img src="img/help-circle.svg" alt="" class="icon-help"></span>46</span>
-                                    <span class="col-checklist row-value"><span class="rating-row__label">Кол-во пунктов по чек-листу <img src="img/help-circle.svg" alt="" class="icon-help"></span>47 из 92</span>
-                                    <div class="col-company">
-                                        <span class="row-your-company hoverable">Ваша компания?</span>
-                                        <span class="row-report-link hoverable">Получить подробный отчет</span>
-                                    </div>
-                                </a>
-                                </li>
-
-                                <li class="rating-row">
-                                    <a href="https://aritrb.ru/rating/rating/index.html" target="_blank" class="row-content-link hoverable cursor-hover-expand">
-                                    <span class="col-num row-num hoverable"><span class="rating-row__label">Номер в рейтинге</span>3</span>
-                                    <div class="col-name">
-                                        <span class="rating-row__label">Название</span>
-                                        <span class="row-company-name">ООО НПФ «Экситон-автоматика»</span>
-                                        <span class="rating-row__label rating-row__label--url">Ссылка на сайт</span>
-                                        <span class="row-company-url">адрессайта.ру</span>
-                                    </div>
-                                    <span class="col-weight row-value"><span class="rating-row__label">Общий вес <img src="img/help-circle.svg" alt="" class="icon-help"></span>46</span>
-                                    <span class="col-checklist row-value"><span class="rating-row__label">Кол-во пунктов по чек-листу <img src="img/help-circle.svg" alt="" class="icon-help"></span>47 из 92</span>
-                                    <div class="col-company">
-                                        <span class="row-your-company hoverable">Ваша компания?</span>
-                                        <span class="row-report-link hoverable">Получить подробный отчет</span>
-                                    </div>
-                                </a>
-                                </li>
-
-                                <li class="rating-row">
-                                    <a href="https://aritrb.ru/rating/rating/index.html" target="_blank" class="row-content-link hoverable cursor-hover-expand">
-                                    <span class="col-num row-num hoverable"><span class="rating-row__label">Номер в рейтинге</span>4</span>
-                                    <div class="col-name">
-                                        <span class="rating-row__label">Название</span>
-                                        <span class="row-company-name">ООО «ГАЗНЕФТЕПРОМСЕРВИС»</span>
-                                        <span class="rating-row__label rating-row__label--url">Ссылка на сайт</span>
-                                        <span class="row-company-url">адрессайта.ру</span>
-                                    </div>
-                                    <span class="col-weight row-value"><span class="rating-row__label">Общий вес <img src="img/help-circle.svg" alt="" class="icon-help"></span>46</span>
-                                    <span class="col-checklist row-value"><span class="rating-row__label">Кол-во пунктов по чек-листу <img src="img/help-circle.svg" alt="" class="icon-help"></span>47 из 92</span>
-                                    <div class="col-company">
-                                        <span class="row-your-company hoverable">Ваша компания?</span>
-                                        <span class="row-report-link hoverable">Получить подробный отчет</span>
-                                    </div>
-                                </a>
-                                </li>
-
-                                <li class="rating-row">
-                                    <a href="https://aritrb.ru/rating/rating/index.html" target="_blank" class="row-content-link hoverable cursor-hover-expand">
-                                     <span class="col-num row-num hoverable"><span class="rating-row__label">Номер в рейтинге</span>5</span>
-                                    <div class="col-name">
-                                        <span class="rating-row__label">Название</span>
-                                        <span class="row-company-name">АО «Нефтемонтаждиагностика»</span>
-                                        <span class="rating-row__label rating-row__label--url">Ссылка на сайт</span>
-                                        <span class="row-company-url">адрессайта.ру</span>
-                                    </div>
-                                    <span class="col-weight row-value"><span class="rating-row__label">Общий вес <img src="img/help-circle.svg" alt="" class="icon-help"></span>46</span>
-                                    <span class="col-checklist row-value"><span class="rating-row__label">Кол-во пунктов по чек-листу <img src="img/help-circle.svg" alt="" class="icon-help"></span>47 из 92</span>
-                                    <div class="col-company">
-                                        <span class="row-your-company hoverable">Ваша компания?</span>
-                                        <span class="row-report-link hoverable">Получить подробный отчет</span>
-                                    </div>
-                                </a>
-                                </li>
-
-                                <li class="rating-row">
-                                    <a href="https://aritrb.ru/rating/rating/index.html" target="_blank" class="row-content-link hoverable cursor-hover-expand">
-                                    <span class="col-num row-num hoverable"><span class="rating-row__label">Номер в рейтинге</span>6</span>
-                                    <div class="col-name">
-                                        <span class="rating-row__label">Название</span>
-                                        <span class="row-company-name">ООО Научно-ПФ «Газкомплектстрой»</span>
-                                        <span class="rating-row__label rating-row__label--url">Ссылка на сайт</span>
-                                        <span class="row-company-url">адрессайта.ру</span>
-                                    </div>
-                                   <span class="col-weight row-value"><span class="rating-row__label">Общий вес <img src="img/help-circle.svg" alt="" class="icon-help"></span>46</span>
-                                    <span class="col-checklist row-value"><span class="rating-row__label">Кол-во пунктов по чек-листу <img src="img/help-circle.svg" alt="" class="icon-help"></span>47 из 92</span>
-                                    <div class="col-company">
-                                        <span class="row-your-company hoverable">Ваша компания?</span>
-                                        <span class="row-report-link hoverable">Получить подробный отчет</span>
-                                    </div>
-                                </a>
-                                </li>
-
-                                <li class="rating-row">
-                                    <a href="https://aritrb.ru/rating/rating/index.html" target="_blank" class="row-content-link hoverable cursor-hover-expand">
-                                    <span class="col-num row-num hoverable"><span class="rating-row__label">Номер в рейтинге</span>7</span>
-                                    <div class="col-name">
-                                        <span class="rating-row__label">Название</span>
-                                        <span class="row-company-name">ООО «БурГеоИнжиниринг»</span>
-                                        <span class="rating-row__label rating-row__label--url">Ссылка на сайт</span>
-                                        <span class="row-company-url">адрессайта.ру</span>
-                                    </div>
-                                    <span class="col-weight row-value"><span class="rating-row__label">Общий вес <img src="img/help-circle.svg" alt="" class="icon-help"></span>46</span>
-                                    <span class="col-checklist row-value"><span class="rating-row__label">Кол-во пунктов по чек-листу <img src="img/help-circle.svg" alt="" class="icon-help"></span>47 из 92</span>
-                                    <div class="col-company">
-                                        <span class="row-your-company hoverable">Ваша компания?</span>
-                                        <span class="row-report-link hoverable">Получить подробный отчет</span>
-                                    </div>
-                                </a>
-                                </li>
-
-                                <li class="rating-row">
-                                    <a href="https://aritrb.ru/rating/rating/index.html" target="_blank" class="row-content-link hoverable cursor-hover-expand">
-                                    <span class="col-num row-num hoverable"><span class="rating-row__label">Номер в рейтинге</span>8</span>
-                                    <div class="col-name">
-                                        <span class="rating-row__label">Название</span>
-                                        <span class="row-company-name">АО «БУРСЕРВИС-ЗБС»</span>
-                                        <span class="rating-row__label rating-row__label--url">Ссылка на сайт</span>
-                                        <span class="row-company-url">адрессайта.ру</span>
-                                    </div>
-                                    <span class="col-weight row-value"><span class="rating-row__label">Общий вес <img src="img/help-circle.svg" alt="" class="icon-help"></span>46</span>
-                                    <span class="col-checklist row-value"><span class="rating-row__label">Кол-во пунктов по чек-листу <img src="img/help-circle.svg" alt="" class="icon-help"></span>47 из 92</span>
-                                    <div class="col-company">
-                                        <span class="row-your-company hoverable">Ваша компания?</span>
-                                        <span class="row-report-link hoverable">Получить подробный отчет</span>
-                                    </div>
-                                </a>
-                                </li>
-
-                                <li class="rating-row">
-                                    <a href="https://aritrb.ru/rating/rating/index.html" target="_blank" class="row-content-link hoverable cursor-hover-expand">
-                                    <span class="col-num row-num hoverable"><span class="rating-row__label">Номер в рейтинге</span>9</span>
-                                    <div class="col-name">
-                                        <span class="rating-row__label">Название</span>
-                                        <span class="row-company-name">ООО «Гпа Инжиниринг Уфа»</span>
-                                        <span class="rating-row__label rating-row__label--url">Ссылка на сайт</span>
-                                        <span class="row-company-url">адрессайта.ру</span>
-                                    </div>
-                                    <span class="col-weight row-value"><span class="rating-row__label">Общий вес <img src="img/help-circle.svg" alt="" class="icon-help"></span>46</span>
-                                    <span class="col-checklist row-value"><span class="rating-row__label">Кол-во пунктов по чек-листу <img src="img/help-circle.svg" alt="" class="icon-help"></span>47 из 92</span>
-                                    <div class="col-company">
-                                        <span class="row-your-company hoverable">Ваша компания?</span>
-                                        <span class="row-report-link hoverable">Получить подробный отчет</span>
-                                    </div>
-                                </a>
-                                </li>
-
-                                <li class="rating-row">
-                                    <a href="https://aritrb.ru/rating/rating/index.html" target="_blank" class="row-content-link hoverable cursor-hover-expand">
-                                    <span class="col-num row-num hoverable"><span class="rating-row__label">Номер в рейтинге</span>10</span>
-                                    <div class="col-name">
-                                        <span class="rating-row__label">Название</span>
-                                        <span class="row-company-name">ООО «НПП ОЗНА-Инжиниринг»</span>
-                                        <span class="rating-row__label rating-row__label--url">Ссылка на сайт</span>
-                                        <span class="row-company-url">адрессайта.ру</span>
-                                    </div>
-                                    <span class="col-weight row-value"><span class="rating-row__label">Общий вес <img src="img/help-circle.svg" alt="" class="icon-help"></span>46</span>
-                                    <span class="col-checklist row-value"><span class="rating-row__label">Кол-во пунктов по чек-листу <img src="img/help-circle.svg" alt="" class="icon-help"></span>47 из 92</span>
-                                    <div class="col-company">
-                                        <span class="row-your-company hoverable">Ваша компания?</span>
-                                        <span class="row-report-link hoverable">Получить подробный отчет</span>
-                                    </div>
-                                </a>
-                                </li>
-                            </ul>
-
-                            <div class="rating-pagination">
-                                <div class="pagination-pages">
-                                    <span class="page-item page-item--active hoverable">1</span>
-                                    <span class="page-item hoverable">2</span>
-                                    <span class="page-item hoverable">3</span>
-                                    <span class="page-item page-item--dots">...</span>
-                                    <span class="page-item hoverable">10</span>
-                                </div>
-                                <button class="btn-show-more hoverable">Показать еще</button>
-                                <div class="per-page">
-                                    <span class="per-page-label">Показывать по:</span>
-                                    <span class="per-page-item per-page-item--active hoverable">5</span>
-                                    <span class="per-page-item hoverable">10</span>
-                                    <span class="per-page-item hoverable">20</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <aside class="rating-sidebar">
-                        <div class="sidebar-meta">
-                            <div class="sidebar-meta__item">
-                                <span class="sidebar-meta__label">Дата:</span>
-                                <span class="sidebar-meta__value">14 декабря 2025</span>
-                            </div>
-                            <div class="sidebar-meta__item">
-                                <span class="sidebar-meta__label">Организатор:</span>
-                                <span class="sidebar-meta__value sidebar-meta__value--org">Вебпространство</span>
-                            </div>
-                        </div>
-                        <div class="sidebar-rule">
-                            <span class="sidebar-rule__title">Правило</span>
-                            <a href="#rules-anchor" class="sidebar-rule__link hoverable">
-                                <img src="img/arrow-down.svg" alt="" class="icon-arrow">
-                            </a>
-                        </div>
-                        <div class="sidebar-form-wrap">
-                            <h3 class="sidebar-form__title">Добавить сайт</h3>
-                            <form class="sidebar-form" action="#" method="POST">
-                                <input class="form-input hoverable" type="text" id="name" name="name" placeholder="Ваше имя" required>
-                                <input class="form-input hoverable" type="tel" id="phone" name="phone" placeholder="Ваш телефон">
-                                <input class="form-input hoverable" type="email" id="email" name="email" placeholder="Email" required>
-                                <input class="form-input hoverable" type="text" id="position" name="position" placeholder="Должность">
-                                <input class="form-input hoverable" type="url" id="site" name="site" placeholder="Сайт">
-                                <label class="form-checkbox hoverable" for="agree">
-                                    <input type="checkbox" class="form-checkbox__input" id="agree" name="agree">
-                                    <span class="form-checkbox__box"></span>
-                                    <span class="form-checkbox__text">
-                                        Я принимаю условия передачи
-                                        <a href="#" class="form-checkbox__link hoverable" target="_blank">персональных данных</a>
-                                    </span>
-                                </label>
-                                <button class="btn-submit hoverable" type="submit">Оставить заявку</button>
-                            </form>
-                        </div>
-                        <div class="btn-contact">
-                            <span class="btn-contact__main">Напишите нам,</span>
-                            <span class="btn-contact__sub">если у вас есть вопросы</span>
-                        </div>
-                    </aside>
-                </div>
-                <section class="other-ratings">
-                    <h2 class="other-ratings__title">Другие рейтинги</h2>
-                    <div class="other-ratings__list">
-                        <div class="other-ratings__row">
-                            <span class="other-ratings__date">14 декабря 2023</span>
-                            <span class="other-ratings__name">Промышленная отрасль</span>
-                            <a href="#" class="other-ratings__link hoverable"><img src="img/up-arrow.svg" alt="" class="icon-arrow"></a>
-                        </div>
-                        <div class="other-ratings__row">
-                            <span class="other-ratings__date">14 декабря 2023</span>
-                            <span class="other-ratings__name">Медицинская отрасль</span>
-                            <a href="#" class="other-ratings__link hoverable"><img src="img/up-arrow.svg" alt="" class="icon-arrow"></a>
-                        </div>
-                        <div class="other-ratings__row">
-                            <span class="other-ratings__date">14 декабря 2023</span>
-                            <span class="other-ratings__name">Образовательная отрасль</span>
-                            <a href="#" class="other-ratings__link hoverable"><img src="img/up-arrow.svg" alt="" class="icon-arrow"></a>
-                        </div>
-                    </div>
-                </section>
-                <section id="rules-anchor" class="rule-section">
-                    <h2 class="rule-section__title">Правило</h2>
-                    <p class="rule-section__text">Рыбатекст используется дизайнерами, проектировщиками и фронтендерами, когда нужно быстро заполнить макеты или прототипы содержимым. Это тестовый контент, который не должен нести никакого смысла, лишь показать наличие самого текста или продемонстрировать типографику в деле.</p>
-                </section>
-            </div>
-        </main>
-
-        <footer class="footer">
-            <div class="footer__row">
-                <div class="footer__column">
-                    <a href="/" class="logo hoverable">
-                        <img src="https://aritrb.wptt.ru/upload/iblock/005/logo.svg" alt="logo" class="logo_desktop">
-                    </a>
-                </div>
-                <div class="footer__column">
-                    <nav class="nav">
-                        <a class="link hoverable" href="https://aritrb.wptt.ru/catalog/products/">It-решения</a>
-                        <a class="link hoverable" href="https://aritrb.wptt.ru/catalog/services/">Услуги</a>
-                        <a class="link hoverable selected" href="https://aritrb.wptt.ru/realizovannye-proekty/">Проекты</a>
-                        <a class="link hoverable" href="https://aritrb.wptt.ru/about-project/">Ассоциация</a>
-                        <a class="link hoverable" href="https://aritrb.wptt.ru/association_news/">Новости</a>
-                        <a class="link hoverable" href="https://aritrb.wptt.ru/arit-index/">Index</a>
-                    </nav>
-                </div>
-            </div>
-            <div class="footer__row">
-                <div class="footer__column">
-                    <a class="link link_gray hoverable" target="_blank" href="https://aritrb.wptt.ru/policy/">Политика конфиденциальности</a>
-                </div>
-                <div class="footer__column">
-                    <a class="link link_gray hoverable" target="_blank" href="https://www.wptt.ru">Разработка — Вебпространство</a>
-                </div>
-            </div>
-        </footer>
-        <div class="cookie-container _showing">
-            <button class="btn hoverable cookie__close hoverable cookie-accept"></button>
-            <div class="title">Наш сайт использует куки</div>
-            <div class="description">Это позволяет нам анализировать взаимодействие посетителей с сайтом и делать его лучше. Продолжая пользоваться сайтом, вы соглашаетесь с <a href="https://aritrb.wptt.ru/policy/" target="_blank" class="hoverable">использованием файлов cookie</a>.</div>
+<body class="webp">
+<div class="wrapper">
+  <div class="follow-cursor" style="transform: translate3d(1819px, 90px, 0px); display: none;"></div>
+  <div class="follow-cursor__block" style="transform: translate3d(1819px, 90px, 0px); display: none;"></div>
+  <header class="header">
+    <div class="left-bar">
+      <button class="btn hoverable burger-btn" id="burger-btn">
+        <span class="children"> </span>
+      </button>
+      <div class="menu" id="menu">
+        <div class="menu-links">
+          <ul>
+            <li>
+              <a href="https://aritrb.wptt.ru/catalog/products/" class="link menu-link hoverable">It-решения</a>
+              <ul class="sub-menu">
+                <li><a class="link sub-menu-link hoverable"
+                       href="https://aritrb.wptt.ru/catalog/products/1s-bitriks-upravlenie-saytom-standart/">1С-Битрикс:
+                  Управление сайтом — Стандарт</a></li>
+                <li><a class="link sub-menu-link hoverable"
+                       href="https://aritrb.wptt.ru/catalog/products/1s-bitriks-upravlenie-saytom-ekspert/">1С-Битрикс:
+                  Управление сайтом — Эксперт</a></li>
+              </ul>
+            </li>
+            <li><a href="https://aritrb.wptt.ru/catalog/services/" class="link menu-link hoverable">Услуги</a></li>
+            <li><a href="https://aritrb.wptt.ru/realizovannye-proekty/"
+                   class="link menu-link hoverable menu-link_active">Проекты</a></li>
+            <li><a href="https://aritrb.wptt.ru/about-project/" class="link menu-link hoverable">Ассоциация</a></li>
+            <li><a href="https://aritrb.wptt.ru/association_news/" class="link menu-link hoverable">Новости</a></li>
+            <li><a href="https://aritrb.wptt.ru/arit-index/" class="link menu-link hoverable">Index</a></li>
+          </ul>
+          <a href="https://aritrb.wptt.ru/auth/" class="link menu-link menu-link_mobile">Личный кабинет</a>
         </div>
+        <form action="https://aritrb.wptt.ru/search/" class="top-container">
+          <div class="search-bar">
+            <input placeholder="Введите запрос" name="q" required="">
+            <button class="search-bar__reset" type="reset"></button>
+            <button class="search-bar__submit" type="submit"></button>
+          </div>
+        </form>
+      </div>
+      <div class="search-menu" id="search-menu">
+        <form action="https://aritrb.wptt.ru/search/" class="top-container hoverable">
+          <div class="search-bar">
+            <input placeholder="Введите запрос" name="q" required="">
+            <button class="search-bar__reset" type="reset"></button>
+            <button class="search-bar__submit" type="submit"></button>
+          </div>
+        </form>
+      </div>
+      <div class="call-request-menu" id="call-request-menu">
+        <div id="comp_ab6864afb0a11c5fc211d373f114dcd2">
+          <h2 class="call-request-menu__title">Связаться с нами</h2>
+          <p></p>
+          <div class="call-request-menu__form call-request">
+            <form name="REQUEST"
+                  action="https://aritrb.wptt.ru/realizovannye-proekty/avtomatizatsiya-sistemy-kontrolno-propusknogo-rezhima-na-territorii-oez-ppt-alabuga/?CODE=avtomatizatsiya-sistemy-kontrolno-propusknogo-rezhima-na-territorii-oez-ppt-alabuga"
+                  method="POST" enctype="multipart/form-data" novalidate="true">
+              <input type="hidden" name="bxajaxid" id="bxajaxid_ab6864afb0a11c5fc211d373f114dcd2_8BACKi"
+                     value="ab6864afb0a11c5fc211d373f114dcd2">
+              <input type="hidden" name="AJAX_CALL" value="Y">
+              <input type="hidden" name="sessid" id="sessid" value="457384d256e69d780fb5201805bac9c4">
+              <input type="hidden" name="WEB_FORM_ID" value="19">
+              <input type="hidden" name="g-recaptcha-response" id="recaptchaResponse"
+                     value="HFNTk5JkAeaj1jZywMGxMdGkxibHlpOj53ZlJfb11NSmNRZSUlXzBpclo-M30aImY8HCh7RAodNzk5CBEUFlA9fDMTCj5LRUZyXh4xPlMbNDgYBGg8OHlxRXQ_AxkKHQwKB34lIC8BLTIoT1gUEB4VNwknd3YAESI1AVY9cRo5JHsoJHs-FQ4MGwQxKjUhGHszOB8Lcx0SCyMFPG0tBhwiNBoULWEafTN9Mn08BxMWGx8GcSA5LR1mITxLCDNDAxElHjRgYxMaKWEHEjciCSw3LjBhJBoNExldVxZ3YmlQMQN4WFgjD0gkCDIUYDFRDyknBxUeOjE2CGE7UR5dRkpdRipge24YF3osPUNYHVxLSGdQdCZDXkN8cFhec0wbJS9jeD8KUUpKEhcbMXduZVA9D3hUVDMmJUQ0JBAiQBhKKC8FG31sFBU2Z2JPdRw7QQEcMT9iHh84LWVvWE9gIV5GaS0yYmkNEy1pVj14LUV5fT95ViAWEBcPB0xibhIPXD1wYFZEbktIOnJSYUNpA0V4ZVs5ZD1FKHU7dCh7RDkIBBQMCzc-HBx7aW8gU2FZWUdhSW8kJCo7FAEkUn9MXG5zbzhmIF1KRD8dBjs9eX5HMwM1GAU_B15GHVFpLi5RUXxiVF5_MyY9KW4jaGxKMk1LQ0djaHlpSyp1FQ">
+              <div class="form-group input__container input__container_text hoverable">
+                <input class="form-control" placeholder="Ваше имя*" required="" name="form_text_237" data-type="text"
+                       type="text">
+              </div>
+              <div class="form-group input__container input__container_phone hoverable">
+                <input class="form-control" placeholder="Ваш телефон*" required="" data-type="tel" type="tel">
+              </div>
+              <div class="form-group textarea__container hoverable">
+                <textarea class="form-control" placeholder="Ваше сообщение*" required="" name="form_textarea_239"
+                          data-type="textarea"></textarea>
+              </div>
+              <div class="form-group">
+                <label class="checkbox checkbox_white">
+                  <input class="form-control" required="" id="240" name="form_checkbox_POLICY[]" checked="" value="240"
+                         data-type="checkbox" type="checkbox">
+                  <span class="label hoverable">Я даю свое согласие на <a href="https://aritrb.wptt.ru/policy/"
+                                                                          target="_blank">обработку моих персональных данных</a></span>
+                  <span class="custom-checkbox hoverable"></span>
+                </label>
+              </div>
+              <button name="web_form_submit" class="btn hoverable btn_secondary" type="submit" value="Отправить">
+                <span class="children">Отправить</span>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <a class="link close-btn hoverable"></a>
     </div>
+    <div class="header__nav">
+      <a href="https://aritrb.wptt.ru/" class="logo hoverable">
+        <img src="https://aritrb.wptt.ru/upload/iblock/005/logo.svg" alt="logo" class="logo_desktop">
+        <img src="https://aritrb.wptt.ru/upload/iblock/67b/logo_mobile.svg" alt="mobile logo" class="logo_mobile">
+      </a>
+      <nav class="nav">
+        <a class="link hoverable" href="https://aritrb.wptt.ru/catalog/products/">Pешения</a>
+        <a class="link hoverable" href="https://aritrb.wptt.ru/catalog/services/">Услуги</a>
+        <a class="link hoverable selected" href="https://aritrb.wptt.ru/realizovannye-proekty/">Проекты</a>
+        <a class="link hoverable" href="https://aritrb.wptt.ru/about-project/">Ассоциация</a>
+        <a class="link hoverable" href="https://aritrb.wptt.ru/association_news/">Новости</a>
+        <a class="link hoverable" href="https://aritrb.wptt.ru/arit-index/">Index</a>
+      </nav>
+    </div>
+    <div id="search-btn" class="header__link header__link_search hoverable">
+      <a class="link-icon link-icon_search"></a>
+    </div>
+    <div class="header__link header__link_personal hoverable">
+      <a href="https://aritrb.wptt.ru/auth/" class="link-icon link-icon_personal"></a>
+    </div>
+    <div id="call-request-btn" class="header__link header__link_call-request hoverable">
+      <a class="link">Оставить заявку</a>
+    </div>
+  </header>
 
-    <script type="text/javascript">if(!window.BX)window.BX={};if(!window.BX.message)window.BX.message=function(mess){if(typeof mess=='object') for(var i in mess) BX.message[i]=mess[i]; return true;};</script>
-    <script type="text/javascript">(window.BX||top.BX).message({'JS_CORE_LOADING':'Загрузка...','JS_CORE_NO_DATA':'- Нет данных -','JS_CORE_WINDOW_CLOSE':'Закрыть','JS_CORE_WINDOW_EXPAND':'Развернуть','JS_CORE_WINDOW_NARROW':'Свернуть в окно','JS_CORE_WINDOW_SAVE':'Сохранить','JS_CORE_WINDOW_CANCEL':'Отменить','JS_CORE_WINDOW_CONTINUE':'Продолжить','JS_CORE_H':'ч','JS_CORE_M':'м','JS_CORE_S':'с','JSADM_AI_HIDE_EXTRA':'Скрыть лишние','JSADM_AI_ALL_NOTIF':'Показать все','JSADM_AUTH_REQ':'Требуется авторизация!','JS_CORE_WINDOW_AUTH':'Войти','JS_CORE_IMAGE_FULL':'Полный размер'});</script>
-    <script type="text/javascript">(window.BX||top.BX).message({'LANGUAGE_ID':'ru','FORMAT_DATE':'DD.MM.YYYY','FORMAT_DATETIME':'DD.MM.YYYY HH:MI:SS','COOKIE_PREFIX':'BITRIX_SM','SERVER_TZ_OFFSET':'10800','SITE_ID':'s1','SITE_DIR':'/','USER_ID':'','SERVER_TIME':'1774513740','USER_TZ_OFFSET':'0','USER_TZ_AUTO':'Y','bitrix_sessid':'457384d256e69d780fb5201805bac9c4'});</script>
-    <script type="text/javascript" src="https://aritrb.wptt.ru/bitrix/cache/js/s1/main/kernel_main/kernel_main.js?1774328715299266"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
-    <script type="text/javascript" src="https://www.google.com/recaptcha/api.js?render=6Lez6h4pAAAAAPikebL6yd_SkWBMnYd-9XJuuQBt"></script>
-    <script type="text/javascript" src="https://aritrb.wptt.ru/bitrix/cache/js/s1/main/template_5422b09689330f878088e21835c87969/template_5422b09689330f878088e21835c87969.js?1773825854164259"></script>
-    <script type="text/javascript">
-        (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)}; m[i].l=1*new Date(); for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }} k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})(window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym"); ym(62732476, "init", { clickmap:true, trackLinks:true, accurateTrackBounce:true });
-    </script>
-    <script>grecaptcha.ready(function() { grecaptcha.execute('6Lez6h4pAAAAAPikebL6yd_SkWBMnYd-9XJuuQBt', {action: 'form'}).then(function(token) { document.querySelector('#recaptchaResponse').value = token; }); });</script>
-    <script>grecaptcha.ready(function () { grecaptcha.execute('6Lez6h4pAAAAAPikebL6yd_SkWBMnYd-9XJuuQBt', { action: 'form' }).then(function (token) { document.querySelector('#recaptchaResponse2').value = token; }); });</script>
+  <main class="main">
+    <div class="container">
+      <h1 class="page-title">Рейтинг сайтов промышленной отрасли</h1>
+      <div class="rating-layout">
+        <div class="rating-table-wrap">
+          <div class="rating-table">
+            <div class="rating-head">
+              <span class="col-num">№</span>
+              <span class="col-name">Название</span>
+              <span class="col-weight">
+                  Общий вес
+                  <button class="tooltip-btn hoverable" data-tooltip-button aria-label="Подсказка">
+                      <img src="img/help-circle.svg" alt="" class="icon-help">
+                      <span class="tooltip-content" data-tooltip-content>
+                        Это тестовый контент, который не должен нести никакого смысла, лишь показать наличие самого текста или продемонстрировать типографику в деле.
+                      </span>
+                  </button>
+              </span>
+              <span class="col-checklist">
+                  Кол-во пунктов по чек-листу
+                  <button class="tooltip-btn hoverable" data-tooltip-button aria-label="Подсказка">
+                      <img src="img/help-circle.svg" alt="" class="icon-help">
+                      <span class="tooltip-content" data-tooltip-content>
+                        Это тестовый контент, который не должен нести никакого смысла, лишь показать наличие самого текста или продемонстрировать типографику в деле.
+                      </span>
+                  </button>
+              </span>
+              <span class="col-company"></span>
+            </div>
+            <ul class="rating-list">
+              <li class="rating-row">
+                <div class="row-content-link hoverable cursor-hover-expand">
+                  <span class="col-num row-num"><span class="rating-row__label">Номер в рейтинге</span>1</span>
+                  <div class="col-name">
+                    <span class="rating-row__label">Название</span>
+                    <span class="row-company-name">ООО «КВАДРИТ»</span>
+                    <span class="rating-row__label rating-row__label--url">Ссылка на сайт</span>
+                    <a target="_blank" href="#" class="row-company-url">адрессайта.ру</a>
+                  </div>
+                  <span class="col-weight row-value">
+                    <span class="rating-row__label">
+                      Общий вес
+                      <button class="tooltip-btn hoverable" data-tooltip-button aria-label="Подсказка">
+                        <img src="img/help-circle.svg" alt="" class="icon-help">
+                        <span class="tooltip-content" data-tooltip-content>
+                          Это тестовый контент, который не должен нести никакого смысла, лишь показать наличие самого текста или продемонстрировать типографику в деле.
+                        </span>
+                      </button>
+                    </span>
+                    46
+                  </span>
+                  <span class="col-checklist row-value">
+                    <span class="rating-row__label">Кол-во пунктов по чек-листу
+                      <button class="tooltip-btn hoverable" data-tooltip-button aria-label="Подсказка">
+                        <img src="img/help-circle.svg" alt="" class="icon-help">
+                        <span class="tooltip-content" data-tooltip-content>
+                          Это тестовый контент, который не должен нести никакого смысла, лишь показать наличие самого текста или продемонстрировать типографику в деле.
+                        </span>
+                      </button>
+                    </span>
+                    47 из 92
+                  </span>
+                  <div class="col-company">
+                    <span class="row-your-company hoverable">Ваша компания?</span>
+                    <span class="row-report-link hoverable">Получить подробный отчет</span>
+                  </div>
+                </div>
+              </li>
+
+              <li class="rating-row">
+                <div class="row-content-link hoverable cursor-hover-expand">
+                  <span class="col-num row-num hoverable">
+                    <span class="rating-row__label">Номер в рейтинге</span>
+                    2
+                  </span>
+                  <div class="col-name">
+                    <span class="rating-row__label">Название</span>
+                    <span class="row-company-name">ООО «НПП УРАЛНЕФТЕГАЗДИАГНОСТИКА»</span>
+                    <span class="rating-row__label rating-row__label--url">Ссылка на сайт</span>
+                    <a target="_blank" href="#" class="row-company-url">адрессайта.ру</a>
+                  </div>
+                  <span class="col-weight row-value">
+                    <span class="rating-row__label">
+                      Общий вес
+                      <button class="tooltip-btn hoverable" data-tooltip-button aria-label="Подсказка">
+                        <button class="tooltip-btn hoverable" data-tooltip-button aria-label="Подсказка">
+                          <img src="img/help-circle.svg" alt="" class="icon-help">
+                          <span class="tooltip-content" data-tooltip-content>
+                            Это тестовый контент, который не должен нести никакого смысла, лишь показать наличие самого текста или продемонстрировать типографику в деле.
+                          </span>
+                        </button>
+                        <span class="tooltip-content" data-tooltip-content>
+                          Это тестовый контент, который не должен нести никакого смысла, лишь показать наличие самого текста или продемонстрировать типографику в деле.
+                        </span>
+                      </button>
+                    </span>
+                    46
+                  </span>
+                  <span class="col-checklist row-value">
+                    <span class="rating-row__label">Кол-во пунктов по чек-листу
+                      <button class="tooltip-btn hoverable" data-tooltip-button aria-label="Подсказка">
+                        <img src="img/help-circle.svg" alt="" class="icon-help">
+                        <span class="tooltip-content" data-tooltip-content>
+                          Это тестовый контент, который не должен нести никакого смысла, лишь показать наличие самого текста или продемонстрировать типографику в деле.
+                        </span>
+                      </button>
+                    </span>
+                    47 из 92
+                  </span>
+                  <div class="col-company">
+                    <span class="row-your-company hoverable">Ваша компания?</span>
+                    <span class="row-report-link hoverable">Получить подробный отчет</span>
+                  </div>
+                </div>
+              </li>
+
+              <li class="rating-row">
+                <div class="row-content-link hoverable cursor-hover-expand">
+                  <span class="col-num row-num hoverable"><span
+                    class="rating-row__label">Номер в рейтинге</span>3</span>
+                  <div class="col-name">
+                    <span class="rating-row__label">Название</span>
+                    <span class="row-company-name">ООО НПФ «Экситон-автоматика»</span>
+                    <span class="rating-row__label rating-row__label--url">Ссылка на сайт</span>
+                    <a target="_blank" href="#" class="row-company-url">адрессайта.ру</a>
+                  </div>
+                  <span class="col-weight row-value">
+                    <span class="rating-row__label">
+                      Общий вес
+                      <button class="tooltip-btn hoverable" data-tooltip-button aria-label="Подсказка">
+                        <img src="img/help-circle.svg" alt="" class="icon-help">
+                        <span class="tooltip-content" data-tooltip-content>
+                          Это тестовый контент, который не должен нести никакого смысла, лишь показать наличие самого текста или продемонстрировать типографику в деле.
+                        </span>
+                      </button>
+                    </span>
+                    46
+                  </span>
+                  <span class="col-checklist row-value">
+                    <span class="rating-row__label">Кол-во пунктов по чек-листу
+                      <button class="tooltip-btn hoverable" data-tooltip-button aria-label="Подсказка">
+                        <img src="img/help-circle.svg" alt="" class="icon-help">
+                        <span class="tooltip-content" data-tooltip-content>
+                          Это тестовый контент, который не должен нести никакого смысла, лишь показать наличие самого текста или продемонстрировать типографику в деле.
+                        </span>
+                      </button>
+                    </span>
+                    47 из 92
+                  </span>
+                  <div class="col-company">
+                    <span class="row-your-company hoverable">Ваша компания?</span>
+                    <span class="row-report-link hoverable">Получить подробный отчет</span>
+                  </div>
+                </div>
+              </li>
+
+              <li class="rating-row">
+                <div class="row-content-link hoverable cursor-hover-expand">
+                  <span class="col-num row-num hoverable"><span
+                    class="rating-row__label">Номер в рейтинге</span>4</span>
+                  <div class="col-name">
+                    <span class="rating-row__label">Название</span>
+                    <span class="row-company-name">ООО «ГАЗНЕФТЕПРОМСЕРВИС»</span>
+                    <span class="rating-row__label rating-row__label--url">Ссылка на сайт</span>
+                    <a target="_blank" href="#" class="row-company-url">адрессайта.ру</a>
+                  </div>
+                  <span class="col-weight row-value">
+                    <span class="rating-row__label">Общий вес
+                      <button class="tooltip-btn hoverable" data-tooltip-button aria-label="Подсказка">
+                        <img src="img/help-circle.svg" alt="" class="icon-help">
+                        <span class="tooltip-content" data-tooltip-content>
+                          Это тестовый контент, который не должен нести никакого смысла, лишь показать наличие самого текста или продемонстрировать типографику в деле.
+                        </span>
+                      </button>
+                    </span>
+                    46
+                  </span>
+                  <span class="col-checklist row-value">
+                    <span class="rating-row__label">
+                      Кол-во пунктов по чек-листу
+                      <button class="tooltip-btn hoverable" data-tooltip-button aria-label="Подсказка">
+                        <img src="img/help-circle.svg" alt="" class="icon-help">
+                        <span class="tooltip-content" data-tooltip-content>
+                          Это тестовый контент, который не должен нести никакого смысла, лишь показать наличие самого текста или продемонстрировать типографику в деле.
+                        </span>
+                      </button>
+                    </span>
+                    47 из 92
+                  </span>
+                  <div class="col-company">
+                    <span class="row-your-company hoverable">Ваша компания?</span>
+                    <span class="row-report-link hoverable">Получить подробный отчет</span>
+                  </div>
+                </div>
+              </li>
+
+              <li class="rating-row">
+                <div class="row-content-link hoverable cursor-hover-expand">
+                  <span class="col-num row-num hoverable"><span
+                    class="rating-row__label">Номер в рейтинге</span>5</span>
+                  <div class="col-name">
+                    <span class="rating-row__label">Название</span>
+                    <span class="row-company-name">АО «Нефтемонтаждиагностика»</span>
+                    <span class="rating-row__label rating-row__label--url">Ссылка на сайт</span>
+                    <a target="_blank" href="#" class="row-company-url">адрессайта.ру</a>
+                  </div>
+                  <span class="col-weight row-value">
+                    <span class="rating-row__label">Общий вес
+                      <button class="tooltip-btn hoverable" data-tooltip-button aria-label="Подсказка">
+                        <img src="img/help-circle.svg" alt="" class="icon-help">
+                        <span class="tooltip-content" data-tooltip-content>
+                          Это тестовый контент, который не должен нести никакого смысла, лишь показать наличие самого текста или продемонстрировать типографику в деле.
+                        </span>
+                      </button>
+                    </span>
+                    46
+                  </span>
+                  <span class="col-checklist row-value">
+                    <span class="rating-row__label">
+                      Кол-во пунктов по чек-листу
+                      <button class="tooltip-btn hoverable" data-tooltip-button aria-label="Подсказка">
+                        <img src="img/help-circle.svg" alt="" class="icon-help">
+                        <span class="tooltip-content" data-tooltip-content>
+                          Это тестовый контент, который не должен нести никакого смысла, лишь показать наличие самого текста или продемонстрировать типографику в деле.
+                        </span>
+                      </button>
+                    </span>
+                    47 из 92
+                  </span>
+                  <div class="col-company">
+                    <span class="row-your-company hoverable">Ваша компания?</span>
+                    <span class="row-report-link hoverable">Получить подробный отчет</span>
+                  </div>
+                </div>
+              </li>
+
+              <li class="rating-row">
+                <div class="row-content-link hoverable cursor-hover-expand">
+                  <span class="col-num row-num hoverable"><span
+                    class="rating-row__label">Номер в рейтинге</span>6</span>
+                  <div class="col-name">
+                    <span class="rating-row__label">Название</span>
+                    <span class="row-company-name">ООО Научно-ПФ «Газкомплектстрой»</span>
+                    <span class="rating-row__label rating-row__label--url">Ссылка на сайт</span>
+                    <a target="_blank" href="#" class="row-company-url">адрессайта.ру</a>
+                  </div>
+                  <span class="col-weight row-value">
+                    <span class="rating-row__label">
+                      Общий вес
+                      <button class="tooltip-btn hoverable" data-tooltip-button aria-label="Подсказка">
+                        <img src="img/help-circle.svg" alt="" class="icon-help">
+                        <span class="tooltip-content" data-tooltip-content>
+                          Это тестовый контент, который не должен нести никакого смысла, лишь показать наличие самого текста или продемонстрировать типографику в деле.
+                        </span>
+                      </button>
+                    </span>
+                    46
+                  </span>
+                  <span class="col-checklist row-value">
+                    <span class="rating-row__label">
+                      Кол-во пунктов по чек-листу
+                      <button class="tooltip-btn hoverable" data-tooltip-button aria-label="Подсказка">
+                        <img src="img/help-circle.svg" alt="" class="icon-help">
+                        <span class="tooltip-content" data-tooltip-content>
+                          Это тестовый контент, который не должен нести никакого смысла, лишь показать наличие самого текста или продемонстрировать типографику в деле.
+                        </span>
+                      </button>
+                    </span>
+                    47 из 92
+                  </span>
+                  <div class="col-company">
+                    <span class="row-your-company hoverable">Ваша компания?</span>
+                    <span class="row-report-link hoverable">Получить подробный отчет</span>
+                  </div>
+                </div>
+              </li>
+
+              <li class="rating-row">
+                <div class="row-content-link hoverable cursor-hover-expand">
+                  <span class="col-num row-num hoverable"><span
+                    class="rating-row__label">Номер в рейтинге</span>7</span>
+                  <div class="col-name">
+                    <span class="rating-row__label">Название</span>
+                    <span class="row-company-name">ООО «БурГеоИнжиниринг»</span>
+                    <span class="rating-row__label rating-row__label--url">Ссылка на сайт</span>
+                    <a target="_blank" href="#" class="row-company-url">адрессайта.ру</a>
+                  </div>
+                  <span class="col-weight row-value">
+                    <span class="rating-row__label">
+                      Общий вес
+                      <button class="tooltip-btn hoverable" data-tooltip-button aria-label="Подсказка">
+                        <img src="img/help-circle.svg" alt="" class="icon-help">
+                        <span class="tooltip-content" data-tooltip-content>
+                          Это тестовый контент, который не должен нести никакого смысла, лишь показать наличие самого текста или продемонстрировать типографику в деле.
+                        </span>
+                      </button>
+                    </span>
+                    46
+                  </span>
+                  <span class="col-checklist row-value">
+                    <span class="rating-row__label">
+                      Кол-во пунктов по чек-листу
+                      <button class="tooltip-btn hoverable" data-tooltip-button aria-label="Подсказка">
+                        <img src="img/help-circle.svg" alt="" class="icon-help">
+                        <span class="tooltip-content" data-tooltip-content>
+                          Это тестовый контент, который не должен нести никакого смысла, лишь показать наличие самого текста или продемонстрировать типографику в деле.
+                        </span>
+                      </button>
+                    </span>
+                    47 из 92
+                  </span>
+                  <div class="col-company">
+                    <span class="row-your-company hoverable">Ваша компания?</span>
+                    <span class="row-report-link hoverable">Получить подробный отчет</span>
+                  </div>
+                </div>
+              </li>
+
+              <li class="rating-row">
+                <div class="row-content-link hoverable cursor-hover-expand">
+                  <span class="col-num row-num hoverable"><span
+                    class="rating-row__label">Номер в рейтинге</span>8</span>
+                  <div class="col-name">
+                    <span class="rating-row__label">Название</span>
+                    <span class="row-company-name">АО «БУРСЕРВИС-ЗБС»</span>
+                    <span class="rating-row__label rating-row__label--url">Ссылка на сайт</span>
+                    <a target="_blank" href="#" class="row-company-url">адрессайта.ру</a>
+                  </div>
+                  <span class="col-weight row-value">
+                    <span class="rating-row__label">
+                      Общий вес
+                      <button class="tooltip-btn hoverable" data-tooltip-button aria-label="Подсказка">
+                        <img src="img/help-circle.svg" alt="" class="icon-help">
+                        <span class="tooltip-content" data-tooltip-content>
+                          Это тестовый контент, который не должен нести никакого смысла, лишь показать наличие самого текста или продемонстрировать типографику в деле.
+                        </span>
+                      </button>
+                    </span>
+                    46
+                  </span>
+                  <span class="col-checklist row-value">
+                    <span class="rating-row__label">
+                      Кол-во пунктов по чек-листу
+                      <button class="tooltip-btn hoverable" data-tooltip-button aria-label="Подсказка">
+                        <img src="img/help-circle.svg" alt="" class="icon-help">
+                        <span class="tooltip-content" data-tooltip-content>
+                          Это тестовый контент, который не должен нести никакого смысла, лишь показать наличие самого текста или продемонстрировать типографику в деле.
+                        </span>
+                      </button>
+                    </span>
+                    47 из 92
+                  </span>
+                  <div class="col-company">
+                    <span class="row-your-company hoverable">Ваша компания?</span>
+                    <span class="row-report-link hoverable">Получить подробный отчет</span>
+                  </div>
+                </div>
+              </li>
+
+              <li class="rating-row">
+                <div class="row-content-link hoverable cursor-hover-expand">
+                  <span class="col-num row-num hoverable"><span
+                    class="rating-row__label">Номер в рейтинге</span>9</span>
+                  <div class="col-name">
+                    <span class="rating-row__label">Название</span>
+                    <span class="row-company-name">ООО «Гпа Инжиниринг Уфа»</span>
+                    <span class="rating-row__label rating-row__label--url">Ссылка на сайт</span>
+                    <a target="_blank" href="#" class="row-company-url">адрессайта.ру</a>
+                  </div>
+                  <span class="col-weight row-value">
+                    <span class="rating-row__label">
+                      Общий вес
+                      <button class="tooltip-btn hoverable" data-tooltip-button aria-label="Подсказка">
+                        <img src="img/help-circle.svg" alt="" class="icon-help">
+                        <span class="tooltip-content" data-tooltip-content>
+                          Это тестовый контент, который не должен нести никакого смысла, лишь показать наличие самого текста или продемонстрировать типографику в деле.
+                        </span>
+                      </button>
+                    </span>
+                    46
+                  </span>
+                  <span class="col-checklist row-value">
+                    <span class="rating-row__label">Кол-во пунктов по чек-листу
+                      <button class="tooltip-btn hoverable" data-tooltip-button aria-label="Подсказка">
+                        <img src="img/help-circle.svg" alt="" class="icon-help">
+                        <span class="tooltip-content" data-tooltip-content>
+                          Это тестовый контент, который не должен нести никакого смысла, лишь показать наличие самого текста или продемонстрировать типографику в деле.
+                        </span>
+                      </button>
+                    </span>
+                    47 из 92
+                  </span>
+                  <div class="col-company">
+                    <span class="row-your-company hoverable">Ваша компания?</span>
+                    <span class="row-report-link hoverable">Получить подробный отчет</span>
+                  </div>
+                </div>
+              </li>
+
+              <li class="rating-row">
+                <div class="row-content-link hoverable cursor-hover-expand">
+                  <span class="col-num row-num hoverable"><span
+                    class="rating-row__label">Номер в рейтинге</span>10</span>
+                  <div class="col-name">
+                    <span class="rating-row__label">Название</span>
+                    <span class="row-company-name">ООО «НПП ОЗНА-Инжиниринг»</span>
+                    <span class="rating-row__label rating-row__label--url">Ссылка на сайт</span>
+                    <a target="_blank" href="#" class="row-company-url">адрессайта.ру</a>
+                  </div>
+                  <span class="col-weight row-value">
+                    <span class="rating-row__label">
+                      Общий вес
+                      <button class="tooltip-btn hoverable" data-tooltip-button aria-label="Подсказка">
+                        <img src="img/help-circle.svg" alt="" class="icon-help">
+                        <span class="tooltip-content" data-tooltip-content>
+                          Это тестовый контент, который не должен нести никакого смысла, лишь показать наличие самого текста или продемонстрировать типографику в деле.
+                        </span>
+                      </button>
+                    </span>
+                    46
+                  </span>
+                  <span class="col-checklist row-value">
+                    <span class="rating-row__label">
+                      Кол-во пунктов по чек-листу
+                      <button class="tooltip-btn hoverable" data-tooltip-button aria-label="Подсказка">
+                        <img src="img/help-circle.svg" alt="" class="icon-help">
+                        <span class="tooltip-content" data-tooltip-content>
+                          Это тестовый контент, который не должен нести никакого смысла, лишь показать наличие самого текста или продемонстрировать типографику в деле.
+                        </span>
+                      </button>
+                    </span>
+                    47 из 92
+                  </span>
+                  <div class="col-company">
+                    <span class="row-your-company hoverable">Ваша компания?</span>
+                    <span class="row-report-link hoverable">Получить подробный отчет</span>
+                  </div>
+                </div>
+              </li>
+            </ul>
+
+            <div class="rating-pagination">
+              <div class="pagination-pages">
+                <span class="page-item hoverable page-item--active">1</span>
+                <span class="page-item hoverable">2</span>
+                <span class="page-item hoverable">3</span>
+                <span class="page-item page-item--dots">...</span>
+                <span class="page-item hoverable">10</span>
+              </div>
+              <button class="btn-show-more hoverable">Показать еще</button>
+              <div class="per-page">
+                <span class="per-page-label">Показывать по:</span>
+                <span class="per-page-item per-page-item--active hoverable">5</span>
+                <span class="per-page-item hoverable">10</span>
+                <span class="per-page-item hoverable">20</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <aside class="rating-sidebar">
+          <div class="sidebar-meta">
+            <div class="sidebar-meta__item">
+              <span class="sidebar-meta__label">Дата:</span>
+              <span class="sidebar-meta__value">14 декабря 2025</span>
+            </div>
+            <div class="sidebar-meta__item">
+              <span class="sidebar-meta__label">Организатор:</span>
+              <span class="sidebar-meta__value sidebar-meta__value--org">Вебпространство</span>
+            </div>
+          </div>
+          <a href="#rules-anchor" class="sidebar-rule hoverable">
+            <span class="sidebar-rule__title">Правило</span>
+            <span class="sidebar-rule__link hoverable">
+							<img src="img/arrow-down.svg" alt="" class="icon-arrow">
+						</span>
+          </a>
+          <div class="sidebar-form-wrap">
+            <h2 class="sidebar-form__title">Добавить сайт</h2>
+            <form class="sidebar-form" data-sidebar-form="" action="#" method="POST" novalidate="">
+              <div class="form-group" data-form-group="">
+                <input class="form-input hoverable" type="text" id="name" name="name" placeholder="Ваше имя" required=""
+                       data-type="name">
+              </div>
+              <div class="form-group" data-form-group="">
+                <input class="form-input hoverable" type="tel" id="phone" name="phone" placeholder="Ваш телефон"
+                       required="" data-type="phone">
+              </div>
+              <div class="form-group" data-form-group="">
+                <input class="form-input hoverable" type="email" id="email" name="email" placeholder="Email" required=""
+                       data-type="email">
+              </div>
+              <div class="form-group" data-form-group="">
+                <input class="form-input hoverable" type="text" id="position" name="position" placeholder="Должность"
+                       required="">
+              </div>
+              <div class="form-group" data-form-group="">
+                <input class="form-input hoverable" type="url" data-type="url"
+                       data-error-message="Введите корректный сайт" id="site" name="site" placeholder="Сайт"
+                       required="">
+              </div>
+              <label class="form-checkbox hoverable" for="agree" data-form-group-checkbox="">
+								<span class="form-checkbox__inner">
+									<input data-required-message="Подтвердите согласие" data-error-message="Подтвердите согласие"
+                         type="checkbox" required="" class="form-checkbox__input" id="agree" name="agree">
+									<span class="form-checkbox__box"></span>
+										<span class="form-checkbox__text">
+											Я принимаю условия передачи
+											<a href="#" class="form-checkbox__link hoverable" target="_blank">персональных данных</a>
+										</span>
+								</span>
+              </label>
+              <button class="btn-submit hoverable" type="submit">Оставить заявку</button>
+            </form>
+          </div>
+          <div class="btn-contact">
+            <button class="btn-contact__main" data-call-request-btn>Напишите нам,</button>
+            <span class="btn-contact__sub">если у вас есть вопросы</span>
+          </div>
+        </aside>
+      </div>
+      <section class="other-ratings">
+        <h2 class="other-ratings__title">Другие рейтинги</h2>
+        <div class="other-ratings__list">
+          <div class="other-ratings__row">
+            <span class="other-ratings__date">14 декабря 2023</span>
+            <span class="other-ratings__name">Промышленная отрасль</span>
+            <a href="#" class="other-ratings__link hoverable"><img src="img/up-arrow.svg" alt="" class="icon-arrow"></a>
+          </div>
+          <div class="other-ratings__row">
+            <span class="other-ratings__date">14 декабря 2023</span>
+            <span class="other-ratings__name">Медицинская отрасль</span>
+            <a href="#" class="other-ratings__link hoverable"><img src="img/up-arrow.svg" alt="" class="icon-arrow"></a>
+          </div>
+          <div class="other-ratings__row">
+            <span class="other-ratings__date">14 декабря 2023</span>
+            <span class="other-ratings__name">Образовательная отрасль</span>
+            <a href="#" class="other-ratings__link hoverable"><img src="img/up-arrow.svg" alt="" class="icon-arrow"></a>
+          </div>
+        </div>
+      </section>
+      <section id="rules-anchor" class="rule-section">
+        <h2 class="rule-section__title">Правило</h2>
+        <p class="rule-section__text">Рыбатекст используется дизайнерами, проектировщиками и фронтендерами, когда нужно
+          быстро заполнить макеты или прототипы содержимым. Это тестовый контент, который не должен нести никакого
+          смысла, лишь показать наличие самого текста или продемонстрировать типографику в деле.</p>
+      </section>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__row">
+      <div class="footer__column">
+        <a href="/" class="logo hoverable">
+          <img src="https://aritrb.wptt.ru/upload/iblock/005/logo.svg" alt="logo" class="logo_desktop">
+        </a>
+      </div>
+      <div class="footer__column">
+        <nav class="nav">
+          <a class="link hoverable" href="https://aritrb.wptt.ru/catalog/products/">It-решения</a>
+          <a class="link hoverable" href="https://aritrb.wptt.ru/catalog/services/">Услуги</a>
+          <a class="link hoverable selected" href="https://aritrb.wptt.ru/realizovannye-proekty/">Проекты</a>
+          <a class="link hoverable" href="https://aritrb.wptt.ru/about-project/">Ассоциация</a>
+          <a class="link hoverable" href="https://aritrb.wptt.ru/association_news/">Новости</a>
+          <a class="link hoverable" href="https://aritrb.wptt.ru/arit-index/">Index</a>
+        </nav>
+      </div>
+    </div>
+    <div class="footer__row">
+      <div class="footer__column">
+        <a class="link link_gray hoverable" target="_blank" href="https://aritrb.wptt.ru/policy/">Политика
+          конфиденциальности</a>
+      </div>
+      <div class="footer__column">
+        <a class="link link_gray hoverable" target="_blank" href="https://www.wptt.ru">Разработка — Вебпространство</a>
+      </div>
+    </div>
+  </footer>
+  <div class="cookie-container _showing">
+    <button class="btn hoverable cookie__close hoverable cookie-accept"></button>
+    <div class="title">Наш сайт использует куки</div>
+    <div class="description">Это позволяет нам анализировать взаимодействие посетителей с сайтом и делать его лучше.
+      Продолжая пользоваться сайтом, вы соглашаетесь с <a href="https://aritrb.wptt.ru/policy/" target="_blank"
+                                                          class="hoverable">использованием файлов cookie</a>.
+    </div>
+  </div>
+</div>
+
+<script type="text/javascript">if (!window.BX) window.BX = {};
+if (!window.BX.message) window.BX.message = function (mess) {
+  if (typeof mess == 'object') for (var i in mess) BX.message[i] = mess[i];
+  return true;
+};</script>
+<script type="text/javascript">(window.BX || top.BX).message({
+  'JS_CORE_LOADING': 'Загрузка...',
+  'JS_CORE_NO_DATA': '- Нет данных -',
+  'JS_CORE_WINDOW_CLOSE': 'Закрыть',
+  'JS_CORE_WINDOW_EXPAND': 'Развернуть',
+  'JS_CORE_WINDOW_NARROW': 'Свернуть в окно',
+  'JS_CORE_WINDOW_SAVE': 'Сохранить',
+  'JS_CORE_WINDOW_CANCEL': 'Отменить',
+  'JS_CORE_WINDOW_CONTINUE': 'Продолжить',
+  'JS_CORE_H': 'ч',
+  'JS_CORE_M': 'м',
+  'JS_CORE_S': 'с',
+  'JSADM_AI_HIDE_EXTRA': 'Скрыть лишние',
+  'JSADM_AI_ALL_NOTIF': 'Показать все',
+  'JSADM_AUTH_REQ': 'Требуется авторизация!',
+  'JS_CORE_WINDOW_AUTH': 'Войти',
+  'JS_CORE_IMAGE_FULL': 'Полный размер'
+});</script>
+<script type="text/javascript">(window.BX || top.BX).message({
+  'LANGUAGE_ID': 'ru',
+  'FORMAT_DATE': 'DD.MM.YYYY',
+  'FORMAT_DATETIME': 'DD.MM.YYYY HH:MI:SS',
+  'COOKIE_PREFIX': 'BITRIX_SM',
+  'SERVER_TZ_OFFSET': '10800',
+  'SITE_ID': 's1',
+  'SITE_DIR': '/',
+  'USER_ID': '',
+  'SERVER_TIME': '1774513740',
+  'USER_TZ_OFFSET': '0',
+  'USER_TZ_AUTO': 'Y',
+  'bitrix_sessid': '457384d256e69d780fb5201805bac9c4'
+});</script>
+<script type="text/javascript"
+        src="https://aritrb.wptt.ru/bitrix/cache/js/s1/main/kernel_main/kernel_main.js?1774328715299266"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+<script type="text/javascript"
+        src="https://www.google.com/recaptcha/api.js?render=6Lez6h4pAAAAAPikebL6yd_SkWBMnYd-9XJuuQBt"></script>
+<script type="text/javascript"
+        src="https://aritrb.wptt.ru/bitrix/cache/js/s1/main/template_5422b09689330f878088e21835c87969/template_5422b09689330f878088e21835c87969.js?1773825854164259"></script>
+<!--<script type="text/javascript">-->
+<!--	(function (m, e, t, r, i, k, a) {-->
+<!--		m[i] = m[i] || function () {-->
+<!--			(m[i].a = m[i].a || []).push(arguments)-->
+<!--		};-->
+<!--		m[i].l = 1 * new Date();-->
+<!--		for (var j = 0; j < document.scripts.length; j++) {-->
+<!--			if (document.scripts[j].src === r) {-->
+<!--				return;-->
+<!--			}-->
+<!--		}-->
+<!--		k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a)-->
+<!--	})(window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");-->
+<!--	ym(62732476, "init", {clickmap: true, trackLinks: true, accurateTrackBounce: true});-->
+<!--</script>-->
+<!--<script>grecaptcha.ready(function () {-->
+<!--	grecaptcha.execute('6Lez6h4pAAAAAPikebL6yd_SkWBMnYd-9XJuuQBt', {action: 'form'}).then(function (token) {-->
+<!--		document.querySelector('#recaptchaResponse').value = token;-->
+<!--	});-->
+<!--});</script>-->
+<!--<script>grecaptcha.ready(function () {-->
+<!--	grecaptcha.execute('6Lez6h4pAAAAAPikebL6yd_SkWBMnYd-9XJuuQBt', {action: 'form'}).then(function (token) {-->
+<!--		document.querySelector('#recaptchaResponse2').value = token;-->
+<!--	});-->
+<!--});</script>-->
 <script>
-const R = document.querySelectorAll('.rating-row');
-const P = document.querySelectorAll('.page-item:not(.page-item--dots)');
-const N = document.querySelectorAll('.per-page-item');
-const B = document.querySelector('.btn-show-more');
-let T = 1;
-let V = 10;
-function renderRows() {
+  const R = document.querySelectorAll('.rating-row');
+  const P = document.querySelectorAll('.page-item:not(.page-item--dots)');
+  const N = document.querySelectorAll('.per-page-item');
+  const B = document.querySelector('.btn-show-more');
+  let T = 1;
+  let V = 10;
+
+  function renderRows() {
     const S0 = (T - 1) * V;
     const S1 = S0 + V;
     R.forEach((r, i) => {
-        if (i >= S0 && i < S1) {
-            r.classList.remove('hidden-row');
-        } else {
-            r.classList.add('hidden-row');
-        }
+      if (i >= S0 && i < S1) {
+        r.classList.remove('hidden-row');
+      } else {
+        r.classList.add('hidden-row');
+      }
     });
     P.forEach(p => {
-        p.classList.remove('page-item--active');
-        if (parseInt(p.textContent) === T) {
-            p.classList.add('page-item--active');
-        }
+      p.classList.remove('page-item--active');
+      if (parseInt(p.textContent) === T) {
+        p.classList.add('page-item--active');
+      }
     });
-}
-P.forEach(p => {
+  }
+
+  P.forEach(p => {
     p.addEventListener('click', () => {
-        const v = parseInt(p.textContent);
-        if (!isNaN(v)) {
-            T = v;
-            renderRows();
-        }
+      const v = parseInt(p.textContent);
+      if (!isNaN(v)) {
+        T = v;
+        renderRows();
+      }
     });
-});
-if (B) {
+  });
+  if (B) {
     B.addEventListener('click', () => {
-        T++;
-        renderRows();
+      T++;
+      renderRows();
     });
-}
-N.forEach(n => {
+  }
+  N.forEach(n => {
     n.addEventListener('click', () => {
-        V = parseInt(n.textContent);
-        T = 1;
-        N.forEach(i => i.classList.remove('per-page-item--active'));
-        n.classList.add('per-page-item--active');
-        renderRows();
+      V = parseInt(n.textContent);
+      T = 1;
+      N.forEach(i => i.classList.remove('per-page-item--active'));
+      n.classList.add('per-page-item--active');
+      renderRows();
     });
-});
-renderRows();
+  });
+  renderRows();
 </script>
 
+
+<div>
+  <div class="grecaptcha-badge" data-style="bottomright"
+       style="width: 256px; height: 60px; display: block; transition: right 0.3s; position: fixed; bottom: 14px; right: -186px; box-shadow: gray 0px 0px 5px; border-radius: 2px; overflow: hidden;">
+    <div class="grecaptcha-logo">
+      <iframe title="reCAPTCHA" width="256" height="60" role="presentation" name="a-juym4ypsxvv" frameborder="0"
+              scrolling="no"
+              sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox allow-storage-access-by-user-activation"
+              src="https://www.google.com/recaptcha/api2/anchor?ar=1&amp;k=6Lez6h4pAAAAAPikebL6yd_SkWBMnYd-9XJuuQBt&amp;co=ZmlsZTo.&amp;hl=ru&amp;v=79clEdOi5xQbrrpL2L8kGmK3&amp;size=invisible&amp;anchor-ms=20000&amp;execute-ms=30000&amp;cb=j988ivd82rov"></iframe>
+    </div>
+    <div class="grecaptcha-error"></div>
+    <textarea id="g-recaptcha-response-100000" name="g-recaptcha-response" class="g-recaptcha-response"
+              style="width: 250px; height: 40px; border: 1px solid rgb(193, 193, 193); margin: 10px 25px; padding: 0px; resize: none; display: none;"></textarea>
+  </div>
+  <iframe style="display: none;"></iframe>
+</div>
 </body>
 </html>
