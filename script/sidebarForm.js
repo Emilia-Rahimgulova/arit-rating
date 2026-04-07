@@ -1,10 +1,34 @@
 document.addEventListener("DOMContentLoaded", ()=> {
-  const forms = document.querySelectorAll("form");
+  const forms = document.querySelectorAll("form:not([name='REQUEST'])");
 
   forms.forEach(form => {
     form.addEventListener("submit", function (e) {
 
       let isValid = true;
+
+      function clearError(field) {
+        const group =
+            field.closest("[data-form-group]") ||
+            field.closest("[data-form-group-checkbox]") ||
+            field.parentNode;
+
+        field.classList.remove("error");
+
+        const error = group.querySelector(".error-message");
+        if (error) error.remove();
+      }
+
+// слушаем изменения
+      form.querySelectorAll("input, textarea").forEach(field => {
+        // для текстовых
+        field.addEventListener("input", () => {
+          clearError(field);
+        });
+        // для чекбоксов и select
+        field.addEventListener("change", () => {
+          clearError(field);
+        });
+      });
 
       // Очистка
       form.querySelectorAll(".error-message").forEach(el => el.remove());
